@@ -16,8 +16,12 @@
     <p>1. Use the inspector to see the HTML attribute and DOM property values. Click the buttons to log values to the console.</p>
 
     <label>HTML Attribute Initializes to "Sarah":
-    <input type="text" value="Sarah" #bindingInput></label>
+    <input type="text" value="Sarah123">
+      <input type="text" value="Sarah1232222" #bindingInput>
+    </label>
+
     <div>
+    <button (click)="getHTMLAttributeValue()">Get HTML attribute value</button> Won't change.
     <button (click)="getHTMLAttributeValue()">Get HTML attribute value</button> Won't change.
     </div>
 
